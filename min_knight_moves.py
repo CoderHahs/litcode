@@ -7,6 +7,8 @@ def minKnightMoves (n, startRow, startCol, endRow, endCol):
     visited = set()
     visited.add((startRow, startCol))
 
+    # can optimize by using pythagorean distance to find positions closest to target
+
     while(len(queue) > 0): 
         
         pos = q.pop(0) 
